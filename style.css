@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #d38312; 
+  background: -webkit-linear-gradient(
+    to right,
+    #a83279,
+    #d38312
+  ); 
+  background: linear-gradient(
+    to right,
+    #a83279,
+    #d38312
+  );
+
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: "Righteous", cursive;
+  color: aliceblue;
+  font-size: 60px;
+}
+
+.clock {
+  height: 70vmin;
+  width: 70vmin;
+  background-color: rgb(18, 18, 17);
+  border-radius: 50%;
+  position: absolute;
+  left: 35%;
+  top: 20%;
+  box-shadow: 0 0 90px black;
+  z-index: 10;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  color: black;
+  /* z-index: 10; */
+}
+
+#hourhand {
+  height: 20%;
+  width: 3%;
+  background: #5c889a;
+}
+
+#minhand {
+  height: 25%;
+  width: 2%;
+  background: #777;
+}
+
+#sechand {
+  height: 30%;
+  width: 1%;
+  background: rgb(70, 47, 3);
+}
+
+#hourhand,
+#minhand,
+#sechand {
+  border-radius: 15px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 50%;
+  z-index: -1;
+  transform-origin: bottom;
+}
